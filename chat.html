@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">                  <!--css Framework-->
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />                                 <!--css Framework-->
+    <link rel="stylesheet" href="style.css">                                                               <!--CSS SHEET LINKED-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">    <!--Font-->
+    <title>Facebook Messenger 90s Style</title>
+</head>
+<body>
+    <script src="script.js"></script>                                                                        <!--SCRIPT LINKED-->  
+
+  <div class="header">
+
+        <i class="nes-icon facebook is-large"></i>                                                          <!--facebook logo-->
+        <h2 class="text">Messenger(beta)</h2> 
+        <h4 class="text2">About
+         <div class="description">
+            <p>A Place For Meaningful Conversation.</p>                                                     <!--trophy logo & About-->
+            <i class="nes-icon trophy is-large"></i>                                                        
+        </div>
+        </h4>
+
+        <h4 class="text3">Help
+            <div class="description2">
+                <p> -Contact-</p>
+                <i class="nes-smartphone"></i>                                                               <!--help-->
+                <p>Call:</p>
+                <p>+1 (650)-543-4800</p>
+                <p>Email: </p>
+                <p>support@fb.com</p>
+            </div>
+        </h4>
+
+  </div>
+
+  <div class="container">
+    
+    <button class="nes-btn is-success" onclick="openChat()">connect to people</button>                    <!--BUTTONS-->
+    <button class="nes-btn is-error" onclick="closeChat()">sign out</button>
+
+  </div>
+
+
+  <div class="chat-window" id="chat-window">                                                               <!--CHAT WINDOW-->
+
+    <div class="chat-box" id="chat-box">
+      <p>Welcome to the facebook Messenger Chat Room!</p>
+    </div>
+
+    <div class="input-box">                                                                                 <!--INPUT BOX-->
+      <input type="text" id="message-input" placeholder="Type your message here...">
+      <i class="nes-icon is-medium heart"></i>
+      <i class="nes-icon is-medium like"></i>
+      <button class="nes-btn is-primary" onclick="sendMessage()">Send</button>
+      <label class="nes-btn is-warning">
+        <span>Documents</span>
+        <input type="file">
+      </label>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Website by Bhanudas Mahadik.All rights reserved for hackathon purposes only.</p>                                         <!--FOOTER-->
+  </footer>
+
+</body>
+</html>
